@@ -1,0 +1,44 @@
+[
+    {
+      "label": "What is 2 + 3?",
+      "choices": [
+        {
+          "value": "5",
+          "correct": true
+        },
+        {
+          "value": "15",
+          "correct": false
+        },
+        {
+          "value": "3",
+          "correct": false
+        },
+        {
+          "value": "-5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "label": "What is 3 - 9?",
+      "choices": [
+        {
+          "value": "3",
+          "correct": false
+        },
+        {
+          "value": "-6",
+          "correct": true
+        },
+        {
+          "value": "7",
+          "correct": false
+        },
+        {
+          "value": "0.5",
+          "correct": false
+        }
+      ]
+    }
+  ]
