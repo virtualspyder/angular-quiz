@@ -1,1 +1,17 @@
-<p>result works!</p>
+<body>
+    <h1>
+      Quiz App
+    </h1>
+    <div class="results">
+      <div class="results-card">
+          <h2>Results</h2>
+        <div class="answer" *ngFor="let a of answers.values; let i = index" [ngClass]="{correct: a.correct}">
+          <div>Your Answer for question {{i+1}}</div>
+          {{a.value}}: {{a.correct}}
+        </div>
+      </div>
+        <button mat-raised-button>
+          <a routerLink="/welcome">Home Page</a>
+        </button>
+    </div>
+  </body>

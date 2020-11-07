@@ -1,1 +1,17 @@
-<p>quiz works!</p>
+<div *ngIf=" !questions" class="text-primary"></div>
+
+<div class="quiz" *ngIf="questions">
+
+  <div class="questions" *ngIf="!results">
+    <app-quiz-form [question]="questions[index]" (onChoiceMade)="update($event)">
+    </app-quiz-form>
+
+    <button (click)="nextResult()" [disabled]="!answers.values[index]">
+      {{index === questions.length - 1 
+        ? 'Result' 
+        : 'Next'}}
+    </button>
+  </div>
+
+  <app-result *ngIf="results" [answers]="answers"></app-result>
+</div>

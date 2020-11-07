@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { Question } from '../question.model';
 
 @Component({
   selector: 'app-quiz-form',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuizFormComponent implements OnInit {
 
-  constructor() { }
+  @Input() question: Question;
+  @Output() onChoiceMade = new EventEmitter<string>();
 
-  ngOnInit(): void {
+  public form: FormGroup;
+
+  ngOnInit() {
+    this.form = new FormGroup({
+      choice: new FormControl()
+    });
+
+    this.form.valueChanges.subscribe(this.onChange);
   }
 
+  onChange = () => {
+    this.onChoiceMade.emit(this.form.value.choice);
+  }
 }
