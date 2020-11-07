@@ -7,18 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  // quiz: Quiz[];
-
   constructor(
-    // public questionsService: QuestionsService
   ) { }
 
   ngOnInit() {
-    // this.questionsService.getQuiz().subscribe((quiz) => {this.quiz = quiz;});
   }
 
-  // reset() {
-  //   this.quiz = undefined;
-  // }
   
 }

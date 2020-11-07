@@ -1,4 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink='/home'>Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a routerLink='/home' class="nav-item nav-link">Home</a>     
+      <a routerLink='/quiz' class="nav-item nav-link">Quiz</a>
+    </div>
+  </div>
+</nav>
+
+
 <body>
+
+  
+
     <h1>
       Quiz App
     </h1>
@@ -15,11 +32,5 @@
     <a routerLink="/quiz">Start Quiz</a>
   </button>
 </div>
-    <!-- <div *ngFor="let q of quiz">
-      <div class="quiz-card">
-          {{q.label}}
-          
-      </div> -->
-    <!-- </div> -->
-  <!-- </div> -->
+
 </body>

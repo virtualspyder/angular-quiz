@@ -11,7 +11,6 @@ import { QuizService } from '../quiz.service';
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit {
-  // quiz: Quiz;
   answers: Answers;
   questions: Question[];
   index: number;
