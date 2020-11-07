@@ -1,3 +1,4 @@
+import { Choice } from './choice.model';
 
 export class Question {
     constructor(
