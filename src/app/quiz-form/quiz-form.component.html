@@ -15,11 +15,11 @@
     <h1>
       Quiz App
     </h1>
-
-  <div *ngIf="question">
     <h1>
       {{question.label}}
     </h1>
+  <div class="card center" *ngIf="question">
+
     <form [formGroup]="form">
       <div class="form-group">
         <label *ngFor="let choice of question.choices">

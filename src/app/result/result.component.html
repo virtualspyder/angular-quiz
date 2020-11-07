@@ -1,16 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink='/home'>Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a routerLink='/home' class="nav-item nav-link">Home</a>     
+      <a routerLink='/quiz' class="nav-item nav-link">Quiz</a>
+    </div>
+  </div>
+</nav>
 
 <body>
     <h1>
       Quiz App
     </h1>
-    <div class="results">
-      <div class="results-card">
-          <h2>Results</h2>
+
+    <div class="results card center">
+      <h2>Results</h2>
+
+      <div>
         <div class="answer" *ngFor="let a of answers.values; let i = index" [ngClass]="{correct: a.correct}">
           <div>Your Answer for question {{i+1}}</div>
           {{a.value}}: {{a.correct}}
         </div>
       </div>
-          <button><a routerLink="/home">Home Page</a></button>
+      <button><a routerLink="/home">Home Page</a></button>
+
     </div>
   </body>
