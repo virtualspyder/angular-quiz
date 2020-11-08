@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" routerLink='/home'>Quiz App</a>
+  <a class="navbar-brand" routerLink='/home'>TEST YOUR MATH</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -12,20 +12,23 @@
 </nav>
 
 <body>
+  <div class="center text-center">
     <h1>
-      Quiz App
+      Math Quiz
     </h1>
-
+  </div>
+  <h2>Results</h2>
     <div class="results card center">
-      <h2>Results</h2>
-
       <div>
         <div class="answer" *ngFor="let a of answers.values; let i = index" [ngClass]="{correct: a.correct}">
           <div>Your Answer for question {{i+1}}</div>
           {{a.value}}: {{a.correct}}
         </div>
       </div>
-      <button><a routerLink="/home">Home Page</a></button>
-
+      <br/>
+      <p class="lead">
+      <a routerLink="/home" class="btn btn-lg btn-secondary">Back to Home Page</a>
+    </p>
     </div>
   </body>
+  

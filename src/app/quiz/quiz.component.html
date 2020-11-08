@@ -6,8 +6,9 @@
   <div class="questions" *ngIf="!results">
     <app-quiz-form [question]="questions[index]" (onChoiceMade)="update($event)">
     </app-quiz-form>
-
-    <button (click)="nextResult()" [disabled]="!answers.values[index]">
+    <br/>
+    <br/>
+    <button (click)="nextResult()">
       {{index === questions.length - 1 
         ? 'Result' 
         : 'Next'}}

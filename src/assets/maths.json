@@ -1,70 +1,116 @@
 [
     {
-      "label": "What is 2 + 3?",
+      "label": "What is three fifth of 100?",
+      "choices": [
+        {
+          "value": "3",
+          "correct": false
+        },
+        {
+          "value": "5",
+          "correct": false
+        },
+        {
+          "value": "20",
+          "correct": false
+        },
+        {
+          "value": "60",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "label": "If David’s age is 27 years old in 2011. What was his age in 2003?",
+      "choices": [
+        {
+          "value": "17 years",
+          "correct": false
+        },
+        {
+          "value": "37 years",
+          "correct": false
+        },
+        {
+          "value": "20 years",
+          "correct": false
+        },
+        {
+          "value": "19 years",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "label": "What is the remainder of 21 divided by 7?",
+      "choices": [
+        {
+          "value": "27",
+          "correct": false
+        },
+        {
+          "value": "7",
+          "correct": false
+        },
+        {
+          "value": "1",
+          "correct": false
+        },
+        {
+          "value": "None of these",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "label": "What is 7% equal to?",
+      "choices": [
+        {
+          "value": "0.007",
+          "correct": false
+        },
+        {
+          "value": "0.07",
+          "correct": true
+        },
+        {
+          "value": "0.7",
+          "correct": false
+        },
+        {
+          "value": "7",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "label": "I am a number. I have 7 in the ones place. I am less than 80 but greater than 70. What is my number?",
+      "choices": [
+        {
+          "value": "71",
+          "correct": false
+        },
+        {
+          "value": "73",
+          "correct": false
+        },
+        {
+          "value": "75",
+          "correct": false
+        },
+        {
+          "value": "77",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "label": "How many years are there in a decade?",
       "choices": [
         {
           "value": "5",
-          "correct": true
-        },
-        {
-          "value": "15",
           "correct": false
         },
-        {
-          "value": "3",
-          "correct": false
-        },
-        {
-          "value": "-5",
-          "correct": false
-        }
-      ]
-    },
-    {
-      "label": "What is 3 - 9?",
-      "choices": [
-        {
-          "value": "3",
-          "correct": false
-        },
-        {
-          "value": "-6",
-          "correct": true
-        },
-        {
-          "value": "7",
-          "correct": false
-        },
-        {
-          "value": "0.5",
-          "correct": false
-        }
-      ]
-    },
-    {
-      "label": "What is 3 - 9?",
-      "choices": [
-        {
-          "value": "3",
-          "correct": false
-        },
-        {
-          "value": "-6",
-          "correct": true
-        },
-        {
-          "value": "7",
-          "correct": false
-        },
-        {
-          "value": "0.5",
-          "correct": false
-        }
-      ]
-    },
-    {
-      "label": "What is 1 + 9?",
-      "choices": [
         {
           "value": "10",
           "correct": true
@@ -74,75 +120,29 @@
           "correct": false
         },
         {
-          "value": "4",
-          "correct": false
-        },
-        {
-          "value": "11",
+          "value": "20",
           "correct": false
         }
       ]
     },
     {
-      "label": "What is 2 - 4?",
+      "label": "What is the square of 15?",
       "choices": [
-        {
-          "value": "-2",
-          "correct": true
-        },
         {
           "value": "15",
           "correct": false
         },
         {
-          "value": "3",
+          "value": "30",
           "correct": false
         },
         {
-          "value": "2",
+          "value": "252",
           "correct": false
-        }
-      ]
-    },
-    {
-      "label": "What is 9 / 3?",
-      "choices": [
+        },
         {
-          "value": "3",
+          "value": "225",
           "correct": true
-        },
-        {
-          "value": "15",
-          "correct": false
-        },
-        {
-          "value": "2",
-          "correct": false
-        },
-        {
-          "value": "-3",
-          "correct": false
-        }
-      ]
-    },
-    {
-      "label": "What is 2 * 3?",
-      "choices": [
-        {
-          "value": "6",
-          "correct": true
-        },
-        {
-          "value": "15",
-          "correct": false
-        },
-        {
-          "value": "3",
-          "correct": false
-        },
-        {
-          "value": "1",
-          "correct": false
         }
       ]
     },
@@ -168,43 +168,22 @@
       ]
     },
     {
-      "label": "What is 10 / 2?",
+      "label": "In a century how many months are there?",
       "choices": [
         {
-          "value": "5",
+          "value": "12",
+          "correct": false
+        },
+        {
+          "value": "120",
+          "correct": false
+        },
+        {
+          "value": "1200",
           "correct": true
         },
         {
-          "value": "15",
-          "correct": false
-        },
-        {
-          "value": "4",
-          "correct": false
-        },
-        {
-          "value": "2",
-          "correct": false
-        }
-      ]
-    },
-    {
-      "label": "What is the square root of 4?",
-      "choices": [
-        {
-          "value": "2",
-          "correct": true
-        },
-        {
-          "value": "1.5",
-          "correct": false
-        },
-        {
-          "value": "3",
-          "correct": false
-        },
-        {
-          "value": "-3",
+          "value": "12000",
           "correct": false
         }
       ]

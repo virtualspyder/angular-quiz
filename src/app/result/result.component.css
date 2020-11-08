@@ -30,6 +30,10 @@ button a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #fff;
+}
+
 button {
   font-weight: 700;
   font-size: 22px;
@@ -48,4 +52,23 @@ button {
 button:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+.form-group {
+  width: 50%; 
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form-group label {
+  margin: 0 auto;
+  text-align: left;
+  width: 80%;
+  padding: 10px 0;
+}
+
+form span {
+  padding-left: 20px;
+  font-size: 24px;
+  width: 80%;
 }
