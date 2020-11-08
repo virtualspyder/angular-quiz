@@ -6,10 +6,10 @@
   </div>
   <div>
 
-    <button class="btn btn-success" (click)="nextOrViewResults()" 
+    <button class="btn btn-success" (click)="nextResult()" 
     [disabled]="!answers.values[currentQuestionIndex]">
       {{currentQuestionIndex === quiz.questions.length - 1 
-        ? 'View results' 
+        ? 'Results' 
         : 'Next'}}
     </button>
   </div>
